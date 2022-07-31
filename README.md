@@ -44,21 +44,27 @@
 
   Main Page, Item Detail, Order (김익현)
    - CSS 애니메이션을 이용한 공지사항 구현
+   
    ![화면_기록_2022-07-29_오후_5_15_06_AdobeExpress](https://user-images.githubusercontent.com/101634412/182009945-b55aa15f-9bbe-4432-86ff-0fa5b67106f3.gif)
   
    - 라이브러리를 사용하지 않고 useState를 활용한 무한 슬라이드 구현
+   
    ![화면_기록_2022-07-29_오후_5_15_29_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010040-82f5be1c-2b6d-4d5a-9467-b11723faeb17.gif)
 
    - 각 조건에 따른 조건부 렌더링을 통해 할인 가격 및 재고 여부에 따른 일시품절, 바로구매/장바구니로 이동 가능한 상품 상세 페이지 구현
+   
    ![화면_기록_2022-07-29_오후_5_21_28_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010292-cf899f4b-8102-444d-9f01-373a9e92f8c2.gif)
 
    - new Date() 함수를 이용해서 거꾸로 시간이 줄어드는 로직 구현
+   
    ![화면_기록_2022-07-29_오후_5_15_53_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010079-8341033b-9c1d-4d5a-910f-588322125911.gif)
  
    - CSS호버 기능을 통해 마우스 호버시 밑에서 올라오는 애니메이션 구현
+   
    ![화면_기록_2022-07-29_오후_5_16_20_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010261-293404b8-1747-43a8-ae57-b12959eb9bb8.gif)
    
    - Cart 페이지에서 fetch(method:"PATCH,DELETE") 함수를 활용하여 BE와 통신 가능하도록 하여 상품 삭제 및 수량 변경 등의 기능을 구현 
+   
    ![화면_기록_2022-07-29_오후_5_22_42_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010282-572c0ee1-5777-49cb-a585-4ada7f9a1ef3.gif)
 
      
