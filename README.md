@@ -1,4 +1,4 @@
-<h1>Wecode 35기 1차 프로젝트 - 1팀 LOCTEA</h1>
+<h1>Wecode 35기 1차 프로젝트 - 1팀 LOCTEA - Part.김익현</h1>
 
 ![스크린샷 2022-07-29 오후 4 58 12](https://user-images.githubusercontent.com/106301980/181713092-f83ac4cb-9098-484a-8afe-7141db81fce7.png)
 
@@ -41,61 +41,24 @@
 - Git, Slack, Trello<br><br>
 
 <h2>구현 기능</h2>
-<ul>
-  <li>Nav, Login, Register, Main Banner (이금관)
-    <ul>
-      <li>Login & Register</li>
-      
-      
-    - BE와 회원가입 조건을 맞춰 정규표현식을 활용한 유효성 검사가 되는 회원가입 페이지 기능 구현
-    - input의 조건이 충족되지 않을 시 조건부 렌더링으로 표시되는 text 추가
-    - 비밀번호가 올바르게 작성되었는지 확인할 수 있는 버튼 추가
-    - 유저 정보가 올바르게 입력되었는지의 여부에 따른 로그인/회원가입 버튼 활성화
-      
-</ul>
-<ul>
-  <li>Nav</li>
-  
-    - BE에서 카테고리 데이터를 받아와 Nav 구현
-  - 대분류와 중분류를 정렬하기 위해 이중 map함수를 적용하여 카테고리 구현
-  - 토큰 유무에 따른 로그인 및 로그아웃 액션 변화
 
-</ul>
-<ul>
-  <li>Main Banner</li>
-</ul>
-
-    - 라이브러리를 사용하지 않고 useState를 활용한 메인 이벤트배너 구현
-    
-  </li>
+  Main Page, Item Detail, Order (김익현)
+   - CSS 애니메이션을 이용한 공지사항 구현
+   ![화면_기록_2022-07-29_오후_5_15_06_AdobeExpress](https://user-images.githubusercontent.com/101634412/182009945-b55aa15f-9bbe-4432-86ff-0fa5b67106f3.gif)
   
-  <li>Item List (최재홍)
-      
-      - 라이브러리를 사용하지 않고 useState를 활용하여 끝단이 있는 carousel 구현
-    - 1차 카테고리, 2차 카테고리 선택에 따라 상이한 제품군, 제품리스트 랜더링
-    - 제품배열에 대한 탭 활성화 여부로 state변화, 제품 리스트업 순서 변경
-    - BE로부터 상이한 제품데이터 획득, 제품 타입에 대한 버튼 클릭에 따라 해당되는 제품들만 선별적으로 호출
-    - 랜더링된 개별적 상품에 대해 개별적 아이디 부여하여 클릭에 따라 해당되는 페이지로 이동
+   - 라이브러리를 사용하지 않고 useState를 활용한 무한 슬라이드 구현
+   ![화면_기록_2022-07-29_오후_5_15_29_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010040-82f5be1c-2b6d-4d5a-9467-b11723faeb17.gif)
+
+   - 각 조건에 따른 조건부 렌더링을 통해 할인 가격 및 재고 여부에 따른 일시품절, 바로구매/장바구니로 이동 가능한 상품 상세 페이지 구현
+   ![화면_기록_2022-07-29_오후_5_21_28_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010292-cf899f4b-8102-444d-9f01-373a9e92f8c2.gif)
+
+   - new Date() 함수를 이용해서 거꾸로 시간이 줄어드는 로직 구현
+   ![화면_기록_2022-07-29_오후_5_15_53_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010079-8341033b-9c1d-4d5a-910f-588322125911.gif)
+ 
+   - CSS호버 기능을 통해 마우스 호버시 밑에서 올라오는 애니메이션 구현
+   ![화면_기록_2022-07-29_오후_5_16_20_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010261-293404b8-1747-43a8-ae57-b12959eb9bb8.gif)
+   
+   - Cart 페이지에서 fetch(method:"PATCH,DELETE") 함수를 활용하여 BE와 통신 가능하도록 하여 상품 삭제 및 수량 변경 등의 기능을 구현 
+   ![화면_기록_2022-07-29_오후_5_22_42_AdobeExpress](https://user-images.githubusercontent.com/101634412/182010282-572c0ee1-5777-49cb-a585-4ada7f9a1ef3.gif)
+
      
-  </li>
-  <li>Main Page, Item Detail, Order (김익현)
-  
-      
-    - 라이브러리를 사용하지 않고 useState를 활용한 무한 슬라이드 구현
-    - 각 조건에 따른 조건부 렌더링을 통해 할인 가격 및 재고 여부에 따른 일시품절, 바로구매/장바구니로 이동 가능한 상품 상세 페이지 구현
-    - 각 input마다 조건을 받아 BE로 전달할 수 있게 구현, 조건에 따른 가격 및 배송비 계산하여 반영
-    - Cart 페이지에서 fetch() 함수를 활용하여 BE와 통신 가능하도록 하여 상품 삭제 및 수량 변경 등의 기능을 구현
-    
-     
-  </li>
-  <li>Footer, Cart (류승연)
-      
-    - 반복되는 구성에 상수데이터를 활용하여 Component 나누어 구현
-    - useState를 활용하여 스크롤 위치를 확인, 부드럽게 스크롤되도록 scrollTop 버튼 구현
-    - 서버에서 전달받은 상품리스트를 장바구니에서 보여줌
-    - 체크 박스로 원하는 아이템을 선택할 수 있으며 선택된 아이템에 한해 할인율과 배송비를 반영한 결제 예상 금액을 실시간으로 보여줌
-    - 선택 삭제를 통한 아이템 삭제 기능 구현, 해당 데이터는 DELETE로 BE와 통신
-    - 같은 아이템을 담을 시 수량 변경으로 담기도록 해당 데이터를 PATCH로 BE와 통신
-
-  </li>
-</ul>
